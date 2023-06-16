@@ -1,0 +1,119 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images-2/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+.nav-logo img{
+    width: 160px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+}
+.nav-links a{
+    margin-left: 40px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-links .btn{
+    background-color: #fff;
+    color: black;
+    padding: 8px 30px;
+    border-radius: 4px;
+}
+.content{
+    margin-top: 180px;
+    margin-left: 50px;
+    color: #fff;
+}
+.content h1{
+    font-size: 40px;
+}
+.search-bar{
+    background-color: #fff;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.search-bar input{
+    background-color: transparent;
+    width: 600px;
+    outline: none;
+    border: 0;
+}
+.search-bar button{
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+}
+.search-bar img{
+    width: 25px;
+}
+.div-arrow{
+    margin-top: 120px;
+    margin-left: 50px;
+}
+.div-arrow img{
+    width: 15px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-sizing: content-box;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px){
+    .search-bar input{
+        width: 230px;
+    }
+    .nav-logo{
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .nav-links{
+        justify-content: center;
+    }
+    .nav-links a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .nav-links .btn{
+        background-color: transparent;
+        color: #fff;
+        padding: 0;
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .content{
+        margin-top: 85px;
+    }
+    .search-bar{
+        padding: 10px 20px;
+    }
+    .search-bar button{
+        width: 16px;
+    }
+}
